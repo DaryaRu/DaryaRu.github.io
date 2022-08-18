@@ -1,14 +1,18 @@
 Telegram.WebApp.ready();
 
-Telegram.WebApp.MainButton.setText("Принять")
+Telegram.WebApp.MainButton.setText("Подтвердить")
   .show()
   .onClick(function () {
-    var nameInput = document.querySelector("#name");
-    var emailInput = document.querySelector("#email");
+    var firstNameInput = document.querySelector("#first_name");
+    var lastNameInput = document.querySelector("#last_name");
+    var middleNameInput = document.querySelector("#middle_name");
+    var companyNameInput = document.querySelector("#company_name");
 
     const data = JSON.stringify({
-      name: nameInput.value,
-      email: emailInput.value,
+      first_name: firstNameInput.value,
+      last_name: lastNameInput.value,
+      middle_name: middleNameInput,
+      company_name: companyNameInput
     });
     Telegram.WebApp.sendData(data);
     Telegram.WebApp.close();
