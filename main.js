@@ -11,8 +11,8 @@ Telegram.WebApp.MainButton.setText("Подтвердить")
     const data = JSON.stringify({
       first_name: firstNameInput.value,
       last_name: lastNameInput.value,
-      middle_name: middleNameInput,
-      company_name: companyNameInput
+      middle_name: middleNameInput.value,
+      company_name: companyNameInput.value
     });
     Telegram.WebApp.sendData(data);
     Telegram.WebApp.close();
