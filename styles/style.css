@@ -1,0 +1,15 @@
+body {
+  background: linear-gradient(-45deg, #fafafa, #868fb8);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  align-items: center;
+}
+
+.dark body {
+  background: linear-gradient(-45deg, #827d7d, #1f2850);
+  color: white;
+}

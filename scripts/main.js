@@ -12,7 +12,7 @@ Telegram.WebApp.MainButton.setText("Подтвердить")
       first_name: firstNameInput.value,
       last_name: lastNameInput.value,
       middle_name: middleNameInput.value,
-      company_name: companyNameInput.value
+      company_name: companyNameInput.value,
     });
     Telegram.WebApp.sendData(data);
     Telegram.WebApp.close();
